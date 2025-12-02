@@ -14,4 +14,9 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+//Test Routes
+Route::resource('test', \App\Http\Controllers\TestController::class)->only(['index']);
+
+
 require __DIR__.'/settings.php';
