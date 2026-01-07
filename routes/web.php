@@ -16,7 +16,7 @@ Route::get('dashboard', function () {
 
 
 //Test Routes
-Route::resource('test', \App\Http\Controllers\TestController::class)->only(['index']);
+//Route::resource('test', \App\Http\Controllers\TestController::class)->only(['index']);
 
 
 require __DIR__.'/settings.php';
