@@ -2,25 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Discipline;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Inertia\Inertia;
 
-class TestController extends Controller
+class DisciplineController
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Inertia::render('Test',
-            [
-                'title' => Auth::user()->name.date('Y-m-d H:i:s'),
-                'description' => 'This is a test'.date('Y-m-d H:i:s')
-            ]
-
-        );
+        //
     }
 
     /**
@@ -42,7 +34,7 @@ class TestController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Discipline $discipline)
     {
         //
     }
@@ -50,7 +42,7 @@ class TestController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Discipline $discipline)
     {
         //
     }
@@ -58,7 +50,7 @@ class TestController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Discipline $discipline)
     {
         //
     }
@@ -66,7 +58,7 @@ class TestController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Discipline $discipline)
     {
         //
     }

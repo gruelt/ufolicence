@@ -34,5 +34,10 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'exalto' => [
+        'username' => env('EXALTO_USERNAME'),
+        'password' => env('EXALTO_PASSWORD'),
+        'api_url' => env('EXALTO_API_URL', 'https://api.exalto.com'),
+     ]
 
 ];
